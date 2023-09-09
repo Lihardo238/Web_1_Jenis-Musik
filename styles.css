@@ -1,0 +1,97 @@
+body {
+    background: linear-gradient(to right, #f8f3b2, #C0C0C0);
+}
+
+.body-content{
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #F1FDF3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.overall_header{
+    padding: 20px;
+    padding-left: 40px;
+    color: #FF8200;
+    font-size: 48px;
+    font-variant-ligatures: historical-ligatures;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navigation-bar{
+}
+
+.submenu-bar{
+    justify-content: Left;
+    color: #2B3765;
+    display: flex;
+}
+
+.music-kind {
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+}
+
+.music-kind:hover{
+    background-color: #E0F4F4;
+}
+
+.tittle-header{
+    height: 120px;
+    background-image: url("file:///D:/Kuliah/Programming/Web_Project/images/Untitled-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-all{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-bottom: 10px;
+}
+
+.advertisement {
+    /* Styles for the advertisement space */
+    /* margin-left: 200px;
+    margin-right: 200px; */
+    width: 150px;
+    height: 200px;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.advertisement img{
+    width: 75%;
+    width: 75%;  
+}
+
+#a-01{
+    float: left;
+}
+
+#a-02 {
+    float: right;
+}
+
+.pengantar{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* body content border design */
+
+.body-content{
+    background: linear-gradient(to right, #dff518, #0c0c0c); /* Gradient background */
+    border: 2px solid #3498db;
+}
+
+.audio-music{
+    display: flex;
+    align-items:flex-start;
+}

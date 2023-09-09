@@ -1,0 +1,14 @@
+1. klasik
+2. Jazz
+3. Country
+4. Rock
+5. Blues
+6. Pop
+7. Techno
+8. Balada
+9. Reggae
+10. RnB
+11. Dangdut
+12. Rap
+13. Hip Hop
+14. Latin
