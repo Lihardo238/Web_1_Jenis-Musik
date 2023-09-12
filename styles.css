@@ -94,4 +94,65 @@ body {
 .audio-music{
     display: flex;
     align-items:flex-start;
+    flex-direction:row;
+}
+
+.audio-music img{
+    margin-right: 30px;
+}
+
+.button{
+    margin-top: 18px;
+    margin-left: 10px;
+    height: 40px;
+    width: 180px;
+    background-color: #0a4be9;
+    justify-content: center;
+    color: #E0F4F4;
+    align-items: center;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    background-color: #1e90ff;
+}
+
+.iframe {
+    float: right;
+    flex: 1;
+    padding-left: 30px;
+}
+
+        /* Style for the image buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin: 20px; */
+    margin-left: 20px;
+}
+
+.button-iframe {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.button-iframe img{
+    height: 50px;
+    width: 70px
+}
+
+        /* Style for the iframe */
+.iframe-container {
+    text-align: center;
+}
+
+iframe {
+    width: 450px;
+    height: 300px;
+    border: none;
 }
