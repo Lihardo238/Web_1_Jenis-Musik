@@ -1,0 +1,137 @@
+.header_all {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+
+.p-over{
+    margin-left: 10px;
+}
+
+.header-con{
+    background-color:#088EFC ;
+}
+
+.introduction_over{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction_over p{
+    margin-left: 3px;
+    margin-top: 7px;
+}
+
+.head_socialm{
+    display: flex;
+    flex: column;
+    justify-content: center;
+}
+
+.head_socialm a{
+    margin-left: 5px;
+}
+
+.head_socialm img{
+    width: 130px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin: 5px; /* Add some margin for spacing */
+}
+
+.introduction-container{
+    background-color: #f4f4f4;
+}
+
+.dropdown-content{
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.dropdown-container{
+    height: 10vh;
+    display: flex;
+    flex: column;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+}
+
+.dropdown-container h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 30px;
+}
+
+.dropdown-content a{
+    color:#808080;
+    font-size: medium;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.dropdown-content img{
+    margin-left:15px;
+    height :40px;
+    width: 40px;
+}
+
+.dropdown-content a:hover{
+    color: white;
+    background-color: #808080;
+}
+
+.introduction-content{
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#image-group{
+    margin-top: 20px;
+}
+
+.col img{
+    height :200px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-group-container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fruits_name{
+    font-size: 22px;
+    font-family:fantasy;
+}
+
+.fruits_desc{
+    font-size: 15px;
+}
+
+.item_desc{
+    text-align: left;
+    align-items: center;
+}
+
+.fruits_desc, .fruits_name{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 22px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
