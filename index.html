@@ -38,9 +38,35 @@
             <p id="value" style="margin-left:3px"></p>
         </div>
     </div>
-    
-    <script>
 
+    <h1 margin-top="20px">Kalkulator Sederhana 2</h1>
+
+    <input id="demo2"/>
+    <div class="button-number" style="display:flex;margin-top:15px;margin-bottom:5px;margin-left:5px">
+        <button class="number" onclick="appendToDemo2('0')">0</button>
+        <button class="number" onclick="appendToDemo2('1')">1</button>
+        <button class="number" onclick="appendToDemo2('2')">2</button>
+        <button class="number" onclick="appendToDemo2('3')">3</button>
+        <button class="number" onclick="appendToDemo2('4')">4</button>
+        <button class="number" onclick="appendToDemo2('5')">5</button>
+        <button class="number" onclick="appendToDemo2('6')">6</button>
+        <button class="number" onclick="appendToDemo2('7')">7</button>
+        <button class="number" onclick="appendToDemo2('8')">8</button>
+        <button class="number" onclick="appendToDemo2('9')">9</button>
+    </div>
+
+    <div class="operator-button" style="margin:5px">
+        <button class="operator" onclick="appendToDemo2('+')">+</button>
+        <button class="operator" onclick="appendToDemo2('-')">-</button>
+        <button class="operator" onclick="appendToDemo2('*')">*</button>
+        <button class="operator" onclick="appendToDemo2('/')">/</button>
+        <button class="operator" onclick="calculateResult()">=</button>
+        <button class="operator" onclick="clear_input()">Clear</button>
+
+    </div>
+
+    <script>
+        //Kalkulator 1
         function tambah(){
             let x = parseInt(document.getElementById("angka1").value);
             let y = parseInt(document.getElementById("angka2").value);
@@ -73,33 +99,7 @@
             document.getElementById("value").textContent = value;
         }
 
-    </script>
-
-    <h1 margin-top="20px">Kalkulator Sederhana 2</h1>
-
-    <input id="demo2"/>
-    <div class="button-number" style="display:flex;margin-top:15px;margin-bottom:5px;margin-left:5px">
-        <button class="number" onclick="appendToDemo2('0')">0</button>
-        <button class="number" onclick="appendToDemo2('1')">1</button>
-        <button class="number" onclick="appendToDemo2('2')">2</button>
-        <button class="number" onclick="appendToDemo2('3')">3</button>
-        <button class="number" onclick="appendToDemo2('4')">4</button>
-        <button class="number" onclick="appendToDemo2('5')">5</button>
-        <button class="number" onclick="appendToDemo2('6')">6</button>
-        <button class="number" onclick="appendToDemo2('7')">7</button>
-        <button class="number" onclick="appendToDemo2('8')">8</button>
-        <button class="number" onclick="appendToDemo2('9')">9</button>
-    </div>
-
-    <div class="operator-button" style="margin:5px">
-        <button class="operator" onclick="appendToDemo2('+')">+</button>
-        <button class="operator" onclick="appendToDemo2('-')">-</button>
-        <button class="operator" onclick="appendToDemo2('*')">*</button>
-        <button class="operator" onclick="appendToDemo2('/')">/</button>
-        <button class="operator" onclick="calculateResult()">=</button>
-    </div>
-
-    <script>
+        //kalkulator2 
         function appendToDemo2(value) {
             const demo2 = document.getElementById("demo2");
             demo2.value += value;
@@ -114,6 +114,12 @@
                 demo2.value = "Error"; // Display "Error" if there's an issue with the input expression
             }
         }
+
+        function clear_input() {
+            const demo2 = document.getElementById("demo2");
+            demo2.value = "";
+        }
+
     </script>
 </body>
 </html>
