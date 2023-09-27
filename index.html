@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+
+    <style>
+        .button{
+            margin:3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Kalkulator Sederhana
+    </h1>
+    <div style="margin: 20px;">
+        <p margin="0">
+            Masukkan angka 1 :
+        </p>
+        <input id="angka1" />
+        <p margin="0">
+            Masukkan angka 2 :
+        </p>
+        <input id="angka2" />
+
+        <div style="display: flex; margin-top: 10px;">
+            <button onclick="tambah()" class="button">+</button>
+            <button onclick="kurang()" class="button">-</button>
+            <button onclick="kali()" class="button">x</button>
+            <button onclick="bagi()" class="button">/</button>
+        </div>
+
+        <div style="display: flex; margin: 5px;">
+            <p> Hasil : </p>
+            <p id="value" style="margin-left:3px"></p>
+        </div>
+    </div>
+    
+    <script>
+
+        function tambah(){
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let value = x + y;
+            document.getElementById("value").textContent = value;
+        }
+
+        function kurang(){
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let value = x - y;
+            document.getElementById("value").textContent = value;
+        }
+
+        function kali(){
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            let value = x * y;
+            document.getElementById("value").textContent = value;
+        }
+
+        function bagi(){
+            let x = parseInt(document.getElementById("angka1").value);
+            let y = parseInt(document.getElementById("angka2").value);
+            if (y === 0) {
+                alert("Pembagian dengan 0 tidak diizinkan");
+                return;
+            }
+            let value = x / y;
+            document.getElementById("value").textContent = value;
+        }
+
+    </script>
+
+    <h1 margin-top="20px">Kalkulator Sederhana 2</h1>
+
+    <input id="demo2"/>
+    <div class="button-number" style="display:flex;margin-top:15px;margin-bottom:5px;margin-left:5px">
+        <button class="number" onclick="appendToDemo2('0')">0</button>
+        <button class="number" onclick="appendToDemo2('1')">1</button>
+        <button class="number" onclick="appendToDemo2('2')">2</button>
+        <button class="number" onclick="appendToDemo2('3')">3</button>
+        <button class="number" onclick="appendToDemo2('4')">4</button>
+        <button class="number" onclick="appendToDemo2('5')">5</button>
+        <button class="number" onclick="appendToDemo2('6')">6</button>
+        <button class="number" onclick="appendToDemo2('7')">7</button>
+        <button class="number" onclick="appendToDemo2('8')">8</button>
+        <button class="number" onclick="appendToDemo2('9')">9</button>
+    </div>
+
+    <div class="operator-button" style="margin:5px">
+        <button class="operator" onclick="appendToDemo2('+')">+</button>
+        <button class="operator" onclick="appendToDemo2('-')">-</button>
+        <button class="operator" onclick="appendToDemo2('*')">*</button>
+        <button class="operator" onclick="appendToDemo2('/')">/</button>
+        <button class="operator" onclick="calculateResult()">=</button>
+    </div>
+
+    <script>
+        function appendToDemo2(value) {
+            const demo2 = document.getElementById("demo2");
+            demo2.value += value;
+        }
+
+        function calculateResult() {
+            const demo2 = document.getElementById("demo2");
+            try {
+                const result = eval(demo2.value); // Using eval to calculate the result
+                demo2.value = result;
+            } catch (error) {
+                demo2.value = "Error"; // Display "Error" if there's an issue with the input expression
+            }
+        }
+    </script>
+</body>
+</html>
